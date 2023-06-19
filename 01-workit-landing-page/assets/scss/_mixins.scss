@@ -1,0 +1,24 @@
+@mixin curved-effect($before-color, $after-color) {
+    &::before,
+    &::after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+    }
+
+    &::before {
+        z-index: -1;
+        background-color: $before-color;
+        border-radius: 0% 0% 50% 50%;
+    }
+
+    &::after {
+        z-index: -2;
+        background-color: $after-color;
+        border-radius: 0%;
+        transform: initial;
+    }
+}

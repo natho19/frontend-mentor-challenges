@@ -1,0 +1,88 @@
+.primary-button {
+    padding: 12px 24px;
+    background-color: $eucaplyptus;
+    border: 2px solid $eucaplyptus;
+    display: inline-block;
+    line-height: 32px;
+    color: $dark-purple;
+    font-weight: 700;
+
+    &:hover {
+        background: transparent;
+        color: #44ffa1;
+    }
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @media #{$tablet-xl} {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    &__image {
+        width: 281px;
+        margin: 0 31px;
+
+        @media #{$tablet-xl} {
+            margin: 0;
+        }
+
+        @media #{$desktop-l} {
+            width: 300px;
+        }
+
+        @media #{$desktop-xl} {
+            width: 477px;
+        }
+    }
+
+    &__body {
+        margin-top: -52px;
+        padding: 32px;
+        background-color: $dark-purple;
+        color: $white;
+        text-align: center;
+
+        @media #{$tablet-xl} {
+            margin-top: 146px;
+            margin-left: -104px;
+            padding: 56px;
+            text-align: left;
+        }
+
+        @media #{$desktop-l} {
+            margin-top: 160px;
+            margin-left: -100px;
+            padding: 64px;
+        }
+    }
+
+    &__title {
+        font-size: 32px;
+        line-height: 48px;
+        margin-bottom: 16px;
+
+        @media #{$tablet-xl} {
+            font-size: 48px;
+            line-height: 56px;
+            margin-bottom: 24px;
+        }
+
+        @media #{$desktop-l} {
+            font-size: 56px;
+            line-height: 64px;
+        }
+    }
+
+    &__description {
+        margin-bottom: 24px;
+
+        @media #{$desktop-l} {
+            margin-bottom: 32px;
+        }
+    }
+}

@@ -1,0 +1,227 @@
+.hero {
+    position: relative;
+    text-align: center;
+    color: $white;
+    padding-bottom: 92px;
+    overflow-x: clip;
+
+    @include curved-effect($dark-purple, $ghost-white);
+
+    &::before {
+        transform: scaleX(2.1);
+
+        @media #{$desktop-l} {
+            transform: scaleX(1.5);
+        }
+    }
+
+    @media #{$tablet} {
+        padding-bottom: 148px;
+        background-image: url('../images/bg-pattern-1.svg'), url('../images/bg-pattern-2.svg');
+        background-repeat: no-repeat, no-repeat;
+        background-position: -230px calc(50% - 55px), calc(100% + 100px) calc(100% - 95px);
+    }
+
+    @media #{$desktop-l} {
+        padding-bottom: 260px;
+        background-position: -135px top, calc(100% + 40px) center;
+    }
+
+    &__title {
+        font-size: 50px;
+        line-height: 50px;
+        margin-bottom: 40px;
+
+        @media #{$tablet} {
+            font-size: 60px;
+            line-height: 60px;
+            max-width: 575px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        @media #{$desktop-l} {
+            font-size: 80px;
+            line-height: 80px;
+            max-width: 635px;
+        }
+
+        strong {
+            display: inline-block;
+            line-height: 55px;
+
+            @media #{$tablet} {
+                line-height: 60px;
+            }
+
+            @media #{$desktop-l} {
+                line-height: 80px;
+            }
+        }
+    }
+
+    &__button {
+        margin-bottom: 64px;
+
+        @media #{$tablet} {
+            margin-bottom: 55px;
+        }
+
+        @media #{$desktop-l} {
+            margin-bottom: 50px;
+        }
+    }
+
+    &__image {
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translate(-50%, 50%);
+        width: 320px;
+
+        @media #{$tablet} {
+            width: 515px;
+        }
+
+        @media #{$desktop-l} {
+            width: 767px;
+            bottom: 40px;
+        }
+    }
+}
+
+.advantages {
+    position: relative;
+    padding-top: calc(64px + (184px / 2));
+    padding-bottom: 71px;
+    overflow-x: clip;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+    @include curved-effect($ghost-white, $white);
+
+    &::before {
+        transform: scaleX(3.5);
+
+        @media #{$tablet} {
+            transform: scaleX(2.2);
+        }
+
+        @media #{$desktop-l} {
+            transform: scaleX(1.5);
+        }
+    }
+
+    @media #{$tablet} {
+        align-items: center;
+        padding-top: 195px;
+        padding-bottom: 104px;
+    }
+
+    @media #{$desktop-l} {
+        padding-top: 250px;
+        padding-bottom: 170px;
+    }
+
+    @media #{$desktop-xl} {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    .advantage {
+        margin-bottom: 40px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+        @media #{$tablet} {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            margin-bottom: 48px;
+            max-width: 573px;
+        }
+
+        @media #{$desktop-l} {
+            flex-direction: column;
+            padding: 0 14px;
+        }
+
+        &__number {
+            display: inline-block;
+            font-family: 'Fraunces';
+            font-size: 20px;
+            width: 48px;
+            height: 48px;
+            line-height: 48px;
+            border-radius: 50%;
+            border: 1px solid $davys-grey;
+            margin-bottom: 24px;
+
+            @media #{$tablet} {
+                flex-shrink: 0;
+                margin-right: 32px;
+                margin-bottom: 0;
+            }
+
+            @media #{$desktop-l} {
+                font-size: 24px;
+                width: 56px;
+                height: 56px;
+                line-height: 56px;
+                margin-right: 0;
+                margin-bottom: 56px;
+            }
+        }
+
+        &__details {
+            @media #{$tablet} {
+                text-align: left;
+            }
+
+            @media #{$desktop-l} {
+                text-align: center;
+            }
+        }
+
+        &__title {
+            font-size: 28px;
+            line-height: 36px;
+            color: $dark-purple;
+            margin-bottom: 16px;
+
+            @media #{$desktop-l} {
+                font-size: 32px;
+                line-height: 40px;
+                margin-bottom: 28px;
+            }
+        }
+    }
+}
+
+.founder {
+    padding-top: 100px;
+    position: relative;
+
+    @media #{$desktop-l} {
+        padding-top: 110px;
+    }
+
+    &__background {
+        display: none;
+
+        @media #{$tablet} {
+            display: block;
+            position: absolute;
+            bottom: -70px;
+            right: 45px;
+        }
+
+        @media #{$desktop-l} {
+            bottom: -5px;
+            right: 285px;
+        }
+    }
+}

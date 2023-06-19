@@ -1,0 +1,96 @@
+@font-face {
+    font-family: 'Fraunces';
+    src: url('../fonts/Fraunces_144pt-SemiBold.ttf');
+    font-style: normal;
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: 'Manrope';
+    src: url('../fonts/Manrope-Regular.ttf');
+    font-style: normal;
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Manrope';
+    src: url('../fonts/Manrope-Bold.ttf');
+    font-style: normal;
+    font-weight: 700;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Manrope', sans-serif;
+    color: $davys-grey;
+    font-size: 16px;
+    line-height: 28px;
+    max-width: 1440px;
+    margin: 0 auto;
+
+    @media #{$desktop-l} {
+        font-size: 18px;
+        line-height: 32px;
+    }
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'Fraunces', serif;
+    margin: 0;
+}
+
+p {
+    margin: 0;
+}
+
+a {
+    color: $white;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+    background: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+:focus {
+    outline: none;
+}
+
+header,
+section {
+    padding: 32px 16px;
+
+    @media #{$tablet} {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+    @media #{$desktop} {
+        padding-left: 80px;
+        padding-right: 80px;
+    }
+
+    @media #{$desktop-l} {
+        padding: 55px 165px;
+    }
+}
+
+.is-underline {
+    border-bottom: 3px solid $eucaplyptus;
+}

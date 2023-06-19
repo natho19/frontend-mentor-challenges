@@ -1,0 +1,19 @@
+// Colors
+$dark-purple: #24053e;
+$eucaplyptus: #44ffa1;
+$davys-grey: #584d62;
+$ghost-white: #fcf8ff;
+$white: #ffffff;
+
+// Responsive
+$small-l: 426px !default;
+$small-xl: 569px !default;
+$medium: 769px !default;
+$large: 1025px !default;
+$xlarge: 1201px !default;
+
+$tablet: 'only screen and (min-width: #{$small-l})';
+$tablet-xl: 'only screen and (min-width: #{$small-xl})';
+$desktop: 'only screen and (min-width: #{$medium})';
+$desktop-l: 'only screen and (min-width: #{$large})';
+$desktop-xl: 'only screen and (min-width: #{$xlarge})';
