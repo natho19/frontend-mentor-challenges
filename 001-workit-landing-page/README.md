@@ -25,7 +25,7 @@ Users should be able to:
 ### Links
 
 -   Solution URL: [https://www.frontendmentor.io/solutions/responsive-landing-page-using-sass-and-flexbox-gz7o1VoP1i](https://www.frontendmentor.io/solutions/responsive-landing-page-using-sass-and-flexbox-gz7o1VoP1i)
--   Live Site URL: [https://natho19.github.io/frontend-mentor-challenges/01-workit-landing-page/](https://natho19.github.io/frontend-mentor-challenges/01-workit-landing-page/)
+-   Live Site URL: [https://natho19.github.io/frontend-mentor-challenges/001-workit-landing-page/](https://natho19.github.io/frontend-mentor-challenges/001-workit-landing-page/)
 
 ### Built with
 
