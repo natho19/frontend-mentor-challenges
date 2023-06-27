@@ -1,11 +1,49 @@
+/* Variables */
+:root {
+    --blue: hsla(234, 85%, 45%, 1);
+    --blue-95-white: hsla(0, 0%, 100%, 0.95);
+    --dark-navy: hsla(223, 30%, 27%, 1);
+    --green: hsla(166, 100%, 37%, 1);
+    --green-95-white: hsla(0, 0%, 100%, 0.95);
+    --light-blue: hsla(241, 100%, 89%, 1);
+    --red: hsla(0, 100%, 67%, 1);
+    --red-95-white: hsla(0, 0%, 100%, 0.95);
+    --white: hsla(0, 0%, 100%, 1);
+    --yellow: hsla(40, 100%, 56%, 1);
+    --yellow-95-white: hsla(39, 100%, 56%, 1);
+    --gradient-1: linear-gradient(180deg, #75f 0%, #6943ff 0.01%, #2f2ce9 100%);
+    --gradient-2: linear-gradient(
+        180deg,
+        #4d21c9 0%,
+        rgba(37, 33, 201, 0) 100%,
+        rgba(37, 33, 201, 0) 100%
+    );
+}
+
 /* General */
 
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
 @font-face {
-    font-family: 'HankenGrotesk';
+    font-family: 'Hanken Grotesk';
     src: url('../fonts/HankenGrotesk-Variable.woff2') format('woff2-variations');
     font-weight: 100 900;
 }
 
 body {
-    font-family: 'HankenGrotesk', sans-serif;
+    margin: 0;
+    font-family: 'Hanken Grotesk', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    background-color: var(--white);
 }
+
+/* Base */
+
+/* Result */
+
+/* Summary */
