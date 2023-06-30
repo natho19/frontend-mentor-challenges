@@ -13,7 +13,12 @@
     --blue: hsl(234, 85%, 45%);
     --blue-95-white: hsla(234, 85%, 45%, 0.05);
     --gradient-1: linear-gradient(180deg, #75f 0%, #6943ff 0.01%, #2f2ce9 100%);
-    --gradient-2: linear-gradient(180deg, #4d21c9 0%, rgba(37, 33, 201, 0) 100%, rgba(37, 33, 201, 0) 100%);
+    --gradient-2: linear-gradient(
+        180deg,
+        #4d21c9 0%,
+        rgba(37, 33, 201, 0) 100%,
+        rgba(37, 33, 201, 0) 100%
+    );
 }
 /*#endregion: Variables*/
 
@@ -26,7 +31,7 @@
 
 @font-face {
     font-family: 'Hanken Grotesk';
-    src: url('../fonts/HankenGrotesk-Variable.woff2') format('woff2-variations');
+    src: url('./HankenGrotesk-Variable.woff2') format('woff2-variations');
     font-weight: 100 900;
 }
 
@@ -144,6 +149,10 @@ button {
     margin-bottom: 24px;
 }
 
+.summary--indicators {
+    margin-bottom: 24px;
+}
+
 .indicator {
     padding: 16px;
     margin-bottom: 16px;
@@ -154,7 +163,7 @@ button {
 }
 
 .indicator:last-of-type {
-    margin-bottom: 24px;
+    margin-bottom: 0;
 }
 
 .indicator--icon {
@@ -208,14 +217,13 @@ button {
 
 .indicator:nth-child(4) {
     background: var(--blue-95-white);
-    margin-bottom: 24px;
 }
 
 .indicator:nth-child(4) .indicator--category {
     color: var(--blue);
 }
 
-.btn {
+.summary--btn {
     display: block;
     text-align: center;
     padding: 18px;
@@ -227,7 +235,7 @@ button {
     font-weight: 700;
 }
 
-.btn:hover {
+.summary--btn:hover {
     background: var(--gradient-1);
 }
 /*#endregion: Summary*/
@@ -288,7 +296,7 @@ button {
         margin-bottom: 28px;
     }
 
-    .indicator:last-of-type {
+    .summary--indicators {
         margin-bottom: 40px;
     }
 }
