@@ -2,7 +2,9 @@
 
 const indicatorsEl = document.querySelector('.summary--indicators');
 
-fetch('../data.json')
+fetch(
+    'https://natho19.github.io/frontend-mentor-challenges/002-results-summary-component/data.json'
+)
     .then(data => data.json())
     .then(indicators => {
         for (const indicator of indicators) {
