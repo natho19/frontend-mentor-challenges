@@ -8,6 +8,7 @@ This is a solution to the [Workit landing page challenge on Frontend Mentor](htt
 -   [Screenshot](#screenshot)
 -   [Links](#links)
 -   [Built with](#built-with)
+-   [Author](#author)
 
 ## Contents
 
@@ -35,3 +36,9 @@ Users should be able to:
 -   Flexbox
 -   SASS/SCSS
 -   BEM
+
+## Author
+
+-   Website - [Nathan Akpawu](https://nakpawu.com/)
+-   Frontend Mentor - [@natho19](https://www.frontendmentor.io/profile/natho19)
+-   LinkedIn - [nakpawu](https://www.linkedin.com/in/nakpawu/)
