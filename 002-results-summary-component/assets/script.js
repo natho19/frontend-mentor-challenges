@@ -1,6 +1,6 @@
 'use strict';
 
-const indicatorsEl = document.querySelector('.summary--indicators');
+const indicatorsEl = document.querySelector('.summary-indicators');
 
 fetch(
     'https://natho19.github.io/frontend-mentor-challenges/002-results-summary-component/data.json'
@@ -17,16 +17,16 @@ function displayIndicator(indicator) {
     indicatorEl.classList.add('indicator');
 
     const image = new Image();
-    image.classList.add('indicator--icon');
+    image.classList.add('indicator-icon');
     image.src = indicator.icon;
     image.alt = `${indicator.category} Icon`;
 
     const h3 = document.createElement('h3');
-    h3.classList.add('indicator--category');
+    h3.classList.add('indicator-category');
     h3.textContent = indicator.category;
 
     const indicatorScoreEl = document.createElement('div');
-    indicatorScoreEl.classList.add('indicator--score');
+    indicatorScoreEl.classList.add('indicator-score');
 
     const strong = document.createElement('strong');
     strong.textContent = indicator.score;
