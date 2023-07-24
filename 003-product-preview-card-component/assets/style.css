@@ -16,9 +16,82 @@
 
 body {
     margin: 0;
+    padding: 28px 16px;
     background-color: var(--cream-bg);
     color: var(--aurometal-saurus);
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
     font-size: 14px;
+    line-height: 23px;
+}
+
+/* Base */
+h1,
+p {
+    margin: 0;
+}
+
+strong {
+    font-weight: 700;
+}
+
+/* Card */
+picture {
+    background-color: #ff0000;
+}
+
+.card-image {
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.card-body {
+    padding: 24px;
+    background-color: var(--pure-white);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.card-category {
+    display: inline-block;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    margin-bottom: 12px;
+    line-height: normal;
+}
+
+.card-title {
+    font-family: 'Fraunces', serif;
+    font-size: 32px;
+    line-height: 32px;
+    text-transform: capitalize;
+    color: var(--gunmetal);
+    margin-bottom: 16px;
+}
+
+.card-description {
+    margin-bottom: 24px;
+}
+
+.card-price {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.new-price {
+    font-family: 'Fraunces', serif;
+    font-size: 32px;
+    line-height: 32px;
+    color: var(--deep-aquamarine);
+}
+
+.old-price {
+    font-size: 13px;
+    text-decoration: line-through;
+    margin-left: 19px;
 }
