@@ -1,0 +1,24 @@
+/* Variables */
+:root {
+    --cream-bg: #f2eae2;
+    --aurometal-saurus: #6c7289;
+    --gunmetal: #1c232b;
+    --deep-aquamarine: #3d8168;
+    --pure-white: #ffffff;
+}
+
+/* General */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: var(--cream-bg);
+    color: var(--aurometal-saurus);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+}
