@@ -4,6 +4,7 @@
     --aurometal-saurus: #6c7289;
     --gunmetal: #1c232b;
     --deep-aquamarine: #3d8168;
+    --deep-aquamarine-hover: #1a4032;
     --pure-white: #ffffff;
 }
 
@@ -45,6 +46,7 @@ button {
     line-height: normal;
     outline: none;
     cursor: pointer;
+    transition: all ease-in-out 0.2s;
 }
 
 /* Card */
@@ -125,4 +127,8 @@ button {
 
 .card-button img {
     margin-right: 11.5px;
+}
+
+.card-button:hover {
+    background-color: var(--deep-aquamarine-hover);
 }
