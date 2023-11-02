@@ -37,7 +37,7 @@ Users should be able to:
 -   SASS/SCSS
 -   BEM
 
-## Author
+### Author
 
 -   Website - [Nathan Akpawu](https://nakpawu.com/)
 -   Frontend Mentor - [@natho19](https://www.frontendmentor.io/profile/natho19)
