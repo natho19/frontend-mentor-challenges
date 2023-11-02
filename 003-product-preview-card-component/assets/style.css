@@ -24,6 +24,9 @@ body {
     font-weight: 500;
     font-size: 14px;
     line-height: 23px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
 }
 
 /* Base */
@@ -50,12 +53,12 @@ button {
 }
 
 /* Card */
-.card-image {
-    display: block;
-    height: 240px;
+.card {
+    max-width: 343px;
 }
 
-.card-image img {
+.card-image {
+    display: block;
     width: 100%;
     height: 240px;
     object-fit: cover;
@@ -94,6 +97,7 @@ button {
 
 .card-price {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     margin-bottom: 20px;
 }
@@ -131,4 +135,48 @@ button {
 
 .card-button:hover {
     background-color: var(--deep-aquamarine-hover);
+}
+
+/* Responsive version tablet */
+@media screen and (min-width: 768px) {
+    body {
+        align-items: center;
+    }
+
+    .card {
+        max-width: 600px;
+        display: flex;
+    }
+
+    .card > * {
+        flex: 1 1 0;
+    }
+
+    .card-image {
+        height: 100%;
+        border-bottom-left-radius: 10px;
+        border-top-right-radius: inherit;
+    }
+
+    .card-body {
+        border-top-right-radius: 10px;
+        border-bottom-left-radius: inherit;
+        padding: 32px;
+    }
+
+    .card-category {
+        margin-bottom: 20px;
+    }
+
+    .card-title {
+        margin-bottom: 24px;
+    }
+
+    .card-description {
+        margin-bottom: 29px;
+    }
+
+    .card-price {
+        margin-bottom: 30px;
+    }
 }

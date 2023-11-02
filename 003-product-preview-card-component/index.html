@@ -13,8 +13,9 @@
     <body>
         <main id="main">
             <div class="card">
-                <picture class="card-image">
-                    <img src="./assets/images/image-product-mobile.jpg" alt="Product image">
+                <picture>
+                    <source media="(min-width: 768px)" srcset="./assets/images/image-product-desktop.jpg">
+                    <img class="card-image" src="./assets/images/image-product-mobile.jpg" alt="Product image">
                 </picture>
                 <div class="card-body">
                     <span class="card-category">Perfume</span>
