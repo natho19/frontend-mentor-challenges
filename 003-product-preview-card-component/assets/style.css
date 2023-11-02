@@ -149,7 +149,7 @@ button {
     }
 
     .card > * {
-        flex: 1 1 0;
+        flex: 1 1 50%;
     }
 
     .card-image {
