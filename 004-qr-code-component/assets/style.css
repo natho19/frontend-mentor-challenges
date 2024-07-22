@@ -1,0 +1,31 @@
+/* Variables */
+:root {
+    --font-primary: "Outfit", sans-serif;
+    --color-dark-navy: #1f314f;
+    --color-grey: #7d889e;
+    --color-light-grey: #d5e1ef;
+    --color-white: #ffffff;
+}
+
+/* General */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: var(--color-light-grey);
+    font-family: var(--font-primary);
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 19px;
+    letter-spacing: 0.19px;
+}
+
+/* Base */
+h1,
+p {
+    margin: 0;
+}
