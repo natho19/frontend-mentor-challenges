@@ -16,6 +16,7 @@
 
 body {
     margin: 0;
+    padding: 28px;
     background-color: var(--color-light-grey);
     font-family: var(--font-primary);
     font-weight: 400;
@@ -28,4 +29,35 @@ body {
 h1,
 p {
     margin: 0;
+}
+
+/* Card */
+.card {
+    padding: 16px;
+    background-color: var(--color-white);
+    border-radius: 20px;
+}
+
+.card-image {
+    height: 288px;
+    width: 100%;
+    background-color: #000;
+    border-radius: 10px;
+    margin-bottom: 24px;
+}
+
+.card-body {
+    text-align: center;
+}
+
+.card-title {
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 28px;
+    letter-spacing: 0;
+    margin-bottom: 16px;
+}
+
+.card-description {
+    margin-bottom: 24px;
 }
