@@ -25,7 +25,7 @@ Users should be able to:
 
 ### Links
 
--   Solution URL: [Add solution URL here](https://your-solution-url.com)
+-   Solution URL: [https://www.frontendmentor.io/challenges/product-preview-card-component-GO7UmttRfa/hub](https://www.frontendmentor.io/challenges/product-preview-card-component-GO7UmttRfa/hub)
 -   Live Site URL: [https://natho19.github.io/frontend-mentor-challenges/003-product-preview-card-component/](https://natho19.github.io/frontend-mentor-challenges/003-product-preview-card-component/)
 
 ### Built with
