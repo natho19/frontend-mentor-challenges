@@ -22,7 +22,7 @@ The challenge is to build out this QR code component and get it looking as close
 
 ### Links
 
--   Solution URL: [Add solution URL here](https://your-solution-url.com)
+-   Solution URL: [https://www.frontendmentor.io/solutions/qr-component-card-component-using-html-and-css-5-TOt8lJIr](https://www.frontendmentor.io/solutions/qr-component-card-component-using-html-and-css-5-TOt8lJIr)
 -   Live Site URL: [https://natho19.github.io/frontend-mentor-challenges/004-qr-code-component/](https://natho19.github.io/frontend-mentor-challenges/004-qr-code-component/)
 
 ### Built with
