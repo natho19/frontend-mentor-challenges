@@ -18,7 +18,7 @@ The challenge is to build out this QR code component and get it looking as close
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![](./preview.jpg)
 
 ### Links
 
