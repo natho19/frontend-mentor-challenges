@@ -1,0 +1,30 @@
+/* Variables */
+:root {
+    --color-yellow: #f4d04e;
+    --color-gray-950: #111111;
+    --color-gray-500: #6b6b6b;
+    --color-white: #ffffff;
+}
+
+/* General */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "Figtree";
+    src: url("./fonts/Figtree-VariableFont_wght.ttf") format("woff2-variations");
+    font-weight: 500 800;
+}
+
+body {
+    font-family: "Figtree", sans-serif;
+    font-style: normal;
+}
+
+/* Base */
+h1,
+p {
+}
