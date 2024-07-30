@@ -24,13 +24,13 @@ body {
     margin: 0;
     padding: 24px;
     background-color: var(--color-yellow);
+    color: var(--color-gray-500);
     font-family: "Figtree", sans-serif;
     font-size: 14px;
     font-weight: 500;
     font-style: normal;
     line-height: 150%;
     letter-spacing: 0px;
-    color: var(--color-gray-500);
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -60,9 +60,8 @@ a {
     text-decoration: none;
 }
 
-a:hover .card-title {
-    color: var(--color-yellow);
-    transition: color ease-in-out 0.3s;
+a:hover {
+    transition: all ease-in-out 0.3s;
 }
 
 /* Card */
@@ -101,6 +100,10 @@ a:hover .card-title {
     margin-bottom: 12px;
 }
 
+a:hover .card-title {
+    color: var(--color-yellow);
+}
+
 .card-description {
     margin-bottom: 24px;
 }
@@ -120,7 +123,6 @@ a:hover .card-title {
 }
 
 /* Responsive */
-
 @media screen and (min-width: 992px) {
     body {
         font-size: 16px;
