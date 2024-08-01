@@ -24,6 +24,10 @@ body {
     font-style: normal;
     background-color: var(--color-very-dark-blue-main-bg);
     color: var(--color-soft-blue);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /* Base */
@@ -36,6 +40,7 @@ p {
 
 a {
     color: var(--color-white);
+    text-decoration: none;
 }
 
 a:hover {
@@ -54,6 +59,7 @@ a:hover {
 .card-image {
     width: 100%;
     height: auto;
+    border-radius: 8px;
 }
 
 .card-body {
@@ -102,4 +108,19 @@ hr {
     margin: 16px 0;
     border: none;
     border-top: 1px solid var(--color-very-dark-blue-line);
+}
+
+.card-author {
+    display: flex;
+    align-items: center;
+}
+
+.author-avatar {
+    width: 32px;
+    margin-right: 16px;
+}
+
+.author-name {
+    font-size: 15px;
+    font-weight: 400;
 }
