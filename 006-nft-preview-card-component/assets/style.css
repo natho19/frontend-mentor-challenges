@@ -51,6 +51,7 @@ a:hover {
 /* Card */
 
 .card {
+    max-width: 350px;
     padding: 24px;
     background-color: var(--color-very-dark-blue-card-bg);
     border-radius: 15px;
