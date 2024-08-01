@@ -49,7 +49,6 @@ a:hover {
 }
 
 /* Card */
-
 .card {
     max-width: 350px;
     padding: 24px;
@@ -74,7 +73,7 @@ a:hover {
     background-color: var(--color-cyan);
     border-radius: 8px;
     opacity: 0;
-    transition: opacity 0.3s ease-out;
+    transition: opacity 0.35s ease-out;
 }
 
 .card-header:hover::before {
@@ -89,7 +88,7 @@ a:hover {
     left: 50%;
     transform: translate(-50%, -50%);
     opacity: 0;
-    transition: opacity 0.3s ease-in;
+    transition: opacity 0.3s ease-in 0.05s;
 }
 
 .card-header:hover::after {
