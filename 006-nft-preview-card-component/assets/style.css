@@ -41,7 +41,7 @@ p {
 a {
     color: var(--color-white);
     text-decoration: none;
-    transition: all 0.3s ease-in-out;
+    transition: all 0.35s ease-in-out;
 }
 
 a:hover {
@@ -120,14 +120,12 @@ a:hover {
     justify-content: space-between;
 }
 
-.nft-price,
-.nft-time-left {
+.card-infos > div {
     display: flex;
     align-items: center;
 }
 
-.nft-price img,
-.nft-time-left img {
+.card-infos img {
     margin-right: 5px;
 }
 
