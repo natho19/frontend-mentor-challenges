@@ -1,0 +1,10 @@
+.nav {
+    background-color: red;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &__logo {
+        width: 89px;
+    }
+}
