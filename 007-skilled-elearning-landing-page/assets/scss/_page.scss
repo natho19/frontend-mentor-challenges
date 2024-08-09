@@ -2,15 +2,9 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-
-    &__logo {
-        width: 89px;
-    }
 }
 
 .hero {
-    padding-top: 38px;
-
     &__title {
         font-size: 40px;
         line-height: 50px;
@@ -23,10 +17,13 @@
 
     &__picture {
         display: flex;
-        margin-top: 46px;
+        margin: 46px 8px 0;
     }
 }
 
-.courses {
-    padding-bottom: 80px;
+footer {
+    background-color: $blue;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
