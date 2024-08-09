@@ -5,6 +5,15 @@ $pink: #f74780;
 $pink-light: #ffa7c3;
 $gray: #83869a;
 $white: #ffffff;
+
+// Gradient
 $gradient-pink: linear-gradient(#ff6f48 0%, #f02aa6 100%);
 $gradient-purple: linear-gradient(#4851ff 0%, #f02aa6 100%);
 $gradient-white: linear-gradient(#ffffff 0%, #f0f1ff 100%);
+
+// Responsive
+$medium: 768px !default;
+$large: 1024px !default;
+
+$tablet: "only screen and (min-width: #{$medium})";
+$desktop: "only screen and (min-width: #{$large})";
