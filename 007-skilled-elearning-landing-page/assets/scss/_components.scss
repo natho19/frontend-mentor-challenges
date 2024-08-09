@@ -15,10 +15,18 @@
 .is-pink {
     padding: 15px 37px 15px 38px;
     background: $gradient-pink;
+
+    &:hover {
+        filter: opacity(0.5);
+    }
 }
 
 .is-purple {
     background: $gradient-purple;
+
+    &:hover {
+        filter: contrast(0.5);
+    }
 }
 
 .spotlight {
