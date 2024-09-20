@@ -1,6 +1,7 @@
 .btn {
     display: inline-block;
-    padding: 9px 24px 11px;
+    padding: 12px 24px;
+    line-height: 28px;
     border-radius: 28px;
 }
 
@@ -35,6 +36,10 @@
     padding: 24px 29px 32px 28px;
     margin-bottom: calc(16px + (56px / 2));
 
+    @media #{$tablet} {
+        padding: 56px 32px;
+    }
+
     &__title {
         color: $white;
         font-size: 24px;
@@ -49,6 +54,10 @@
     border-radius: 10px;
     box-shadow: 0 25px 50px 0 rgba(6, 22, 141, 0.0442);
     position: relative;
+
+    @media #{$tablet} {
+        margin-bottom: 56px;
+    }
 
     &__icon {
         position: absolute;
@@ -75,5 +84,9 @@
 
     &:last-child {
         margin-bottom: 0;
+
+        @media #{$tablet} {
+            margin-bottom: 56px;
+        }
     }
 }

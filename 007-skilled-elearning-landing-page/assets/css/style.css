@@ -12,7 +12,14 @@ body {
   font-weight: 500;
   font-style: normal;
   font-size: 16px;
-  line-height: 28px;
+  line-height: 26px;
+}
+@media only screen and (min-width: 768px) {
+  body {
+    background-image: url("../images/image-hero-tablet.webp");
+    background-repeat: no-repeat;
+    background-position: 370px -8%;
+  }
 }
 
 body,
@@ -39,6 +46,21 @@ a {
   transition: all 0.3s ease-in-out;
 }
 
+header,
+section,
+footer {
+  padding-left: 16px;
+  padding-right: 16px;
+}
+@media only screen and (min-width: 768px) {
+  header,
+  section,
+  footer {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+
 img {
   max-width: 100%;
   height: auto;
@@ -50,7 +72,8 @@ img {
 
 .btn {
   display: inline-block;
-  padding: 9px 24px 11px;
+  padding: 12px 24px;
+  line-height: 28px;
   border-radius: 28px;
 }
 
@@ -82,6 +105,11 @@ img {
   padding: 24px 29px 32px 28px;
   margin-bottom: 44px;
 }
+@media only screen and (min-width: 768px) {
+  .spotlight {
+    padding: 56px 32px;
+  }
+}
 .spotlight__title {
   color: #ffffff;
   font-size: 24px;
@@ -95,6 +123,11 @@ img {
   border-radius: 10px;
   box-shadow: 0 25px 50px 0 rgba(6, 22, 141, 0.0442);
   position: relative;
+}
+@media only screen and (min-width: 768px) {
+  .course {
+    margin-bottom: 56px;
+  }
 }
 .course__icon {
   position: absolute;
@@ -117,22 +150,37 @@ img {
 .course:last-child {
   margin-bottom: 0;
 }
+@media only screen and (min-width: 768px) {
+  .course:last-child {
+    margin-bottom: 56px;
+  }
+}
+
+.header {
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+@media only screen and (min-width: 768px) {
+  .header {
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+}
 
 .nav {
-  padding: 16px 16px 0;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-@media only screen and (min-width: 768px) {
-  .nav {
-    padding: 24px 40px 0;
-  }
-}
 
 .hero {
-  background-color: red;
-  padding: 38px 16px 0;
+  padding-top: 22px;
+}
+@media only screen and (min-width: 768px) {
+  .hero {
+    padding-top: 76px;
+    padding-bottom: 186px;
+  }
 }
 .hero__title {
   font-size: 40px;
@@ -142,30 +190,44 @@ img {
 .hero__description {
   margin-bottom: 24px;
 }
+@media only screen and (min-width: 768px) {
+  .hero__body {
+    max-width: 400px;
+  }
+}
 .hero__picture {
   display: flex;
   margin: 46px 8px 0;
 }
 @media only screen and (min-width: 768px) {
   .hero__picture {
-    margin: 0;
-  }
-}
-@media only screen and (min-width: 768px) {
-  .hero {
-    padding: 99px 40px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    display: none;
   }
 }
 
 .courses {
-  padding: 0 16px 80px;
+  padding-bottom: 80px;
+}
+@media only screen and (min-width: 768px) {
+  .courses {
+    padding-bottom: 30px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: stretch;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .courses > * {
+    flex-basis: 49%;
+    margin-bottom: 56px;
+  }
 }
 
 footer {
-  padding: 36px 16px;
+  padding-top: 36px;
+  padding-bottom: 36px;
   background-color: #13183f;
   display: flex;
   align-items: center;

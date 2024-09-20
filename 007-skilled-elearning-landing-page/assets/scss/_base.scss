@@ -13,7 +13,13 @@ body {
     font-weight: 500;
     font-style: normal;
     font-size: 16px;
-    line-height: 28px;
+    line-height: 26px;
+
+    @media #{$tablet} {
+        background-image: url("../images/image-hero-tablet.webp");
+        background-repeat: no-repeat;
+        background-position: 370px -8%;
+    }
 }
 
 body,
@@ -38,6 +44,18 @@ a {
     text-transform: capitalize;
     font-weight: 700;
     transition: all 0.3s ease-in-out;
+}
+
+header,
+section,
+footer {
+    padding-left: 16px;
+    padding-right: 16px;
+
+    @media #{$tablet} {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
 }
 
 img {
