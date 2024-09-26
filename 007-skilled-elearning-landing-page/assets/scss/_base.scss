@@ -8,21 +8,29 @@
 
 body {
     background: $gradient-white;
+    background-repeat: no-repeat;
     color: $gray;
     font-family: "Plus Jakarta Sans", sans-serif;
     font-weight: 500;
     font-style: normal;
     font-size: 16px;
     line-height: 26px;
+    max-width: 1440px;
+    margin: 0 auto;
 
     @media #{$tablet} {
         background-image: url("../images/image-hero-tablet.webp");
-        background-repeat: no-repeat;
         background-position: 370px -8%;
+    }
+
+    @media #{$desktop} {
+        background-image: url("../images/image-hero-desktop.webp");
+        background-position: 760px -22%;
+        font-size: 18px;
+        line-height: 28px;
     }
 }
 
-body,
 h1,
 h2,
 h3,
@@ -56,6 +64,11 @@ footer {
         padding-left: 40px;
         padding-right: 40px;
     }
+
+    @media #{$desktop} {
+        padding-left: 165px;
+        padding-right: 165px;
+    }
 }
 
 img {
@@ -65,4 +78,8 @@ img {
 
 .logo {
     width: 89px;
+
+    @media #{$desktop} {
+        width: 111px;
+    }
 }

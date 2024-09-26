@@ -7,22 +7,31 @@
 
 body {
   background: linear-gradient(#ffffff 0%, #f0f1ff 100%);
+  background-repeat: no-repeat;
   color: #83869a;
   font-family: "Plus Jakarta Sans", sans-serif;
   font-weight: 500;
   font-style: normal;
   font-size: 16px;
   line-height: 26px;
+  max-width: 1440px;
+  margin: 0 auto;
 }
 @media only screen and (min-width: 768px) {
   body {
     background-image: url("../images/image-hero-tablet.webp");
-    background-repeat: no-repeat;
     background-position: 370px -8%;
   }
 }
+@media only screen and (min-width: 1024px) {
+  body {
+    background-image: url("../images/image-hero-desktop.webp");
+    background-position: 760px -22%;
+    font-size: 18px;
+    line-height: 28px;
+  }
+}
 
-body,
 h1,
 h2,
 h3,
@@ -60,6 +69,14 @@ footer {
     padding-right: 40px;
   }
 }
+@media only screen and (min-width: 1024px) {
+  header,
+  section,
+  footer {
+    padding-left: 165px;
+    padding-right: 165px;
+  }
+}
 
 img {
   max-width: 100%;
@@ -69,12 +86,22 @@ img {
 .logo {
   width: 89px;
 }
+@media only screen and (min-width: 1024px) {
+  .logo {
+    width: 111px;
+  }
+}
 
 .btn {
   display: inline-block;
   padding: 12px 24px;
   line-height: 28px;
   border-radius: 28px;
+}
+@media only screen and (min-width: 1024px) {
+  .btn {
+    padding: 14px 32px;
+  }
 }
 
 .is-blue {
@@ -103,17 +130,29 @@ img {
   background: linear-gradient(#ff6f48 0%, #f02aa6 100%);
   border-radius: 10px;
   padding: 24px 29px 32px 28px;
-  margin-bottom: 44px;
+  margin-bottom: 40px;
 }
 @media only screen and (min-width: 768px) {
   .spotlight {
     padding: 56px 32px;
   }
 }
+@media only screen and (min-width: 1024px) {
+  .spotlight {
+    padding-top: 64px;
+    padding-bottom: 64px;
+  }
+}
 .spotlight__title {
   color: #ffffff;
   font-size: 24px;
   line-height: 32px;
+}
+@media only screen and (min-width: 1024px) {
+  .spotlight__title {
+    font-size: 32px;
+    line-height: 40px;
+  }
 }
 
 .course {
@@ -124,9 +163,9 @@ img {
   box-shadow: 0 25px 50px 0 rgba(6, 22, 141, 0.0442);
   position: relative;
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1024px) {
   .course {
-    margin-bottom: 56px;
+    padding: 64px 32px 40px;
   }
 }
 .course__icon {
@@ -137,6 +176,13 @@ img {
   font-size: 20px;
   line-height: 25px;
   margin-bottom: 16px;
+}
+@media only screen and (min-width: 1024px) {
+  .course__title {
+    font-size: 24px;
+    line-height: 30px;
+    margin-bottom: 24px;
+  }
 }
 .course__description {
   margin-bottom: 24px;
@@ -153,6 +199,11 @@ img {
 @media only screen and (min-width: 768px) {
   .course:last-child {
     margin-bottom: 56px;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .course:last-child {
+    margin-bottom: 80px;
   }
 }
 
@@ -179,7 +230,23 @@ img {
 @media only screen and (min-width: 768px) {
   .hero {
     padding-top: 76px;
-    padding-bottom: 186px;
+    padding-bottom: 210px;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .hero {
+    padding-top: 162px;
+    padding-bottom: 250px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .hero__body {
+    max-width: 400px;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .hero__body {
+    max-width: 457px;
   }
 }
 .hero__title {
@@ -187,12 +254,19 @@ img {
   line-height: 50px;
   margin-bottom: 26px;
 }
+@media only screen and (min-width: 1024px) {
+  .hero__title {
+    font-size: 56px;
+    line-height: 70px;
+    margin-bottom: 36px;
+  }
+}
 .hero__description {
   margin-bottom: 24px;
 }
-@media only screen and (min-width: 768px) {
-  .hero__body {
-    max-width: 400px;
+@media only screen and (min-width: 1024px) {
+  .hero__description {
+    margin-bottom: 40px;
   }
 }
 .hero__picture {
@@ -218,10 +292,24 @@ img {
     align-items: stretch;
   }
 }
+@media only screen and (min-width: 1024px) {
+  .courses {
+    padding-bottom: 84px;
+  }
+}
+.courses > * {
+  margin-bottom: 40px;
+}
 @media only screen and (min-width: 768px) {
   .courses > * {
     flex-basis: 49%;
     margin-bottom: 56px;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .courses > * {
+    flex-basis: 31.6%;
+    margin-bottom: 80px;
   }
 }
 
